@@ -1,0 +1,17 @@
+(i__main__
+object
+p0
+(dp1
+S'date'
+p2
+S'06.12.2013'
+p3
+sS'name'
+p4
+S'SURBHI'
+p5
+sS'room'
+p6
+S'K313'
+p7
+sb.
