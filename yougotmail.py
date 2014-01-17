@@ -22,13 +22,17 @@ class object:
 #need to load last checked from a file
 try:
     #print oh
+    
+      
     last_checked = pickle.load(open("smaildata.txt","rb"))
+    print type(last_checked)
     print last_checked
 except:
     print 'in except'
     last_checked = object('1','','')
     
-
+if str(raw_input('Refresh last_checked? (Y|N)')).upper()=='Y':
+  last_checked = object('1','','')
 
 def normalizer(text):
     text = text[0]
@@ -72,6 +76,7 @@ def scrapper(soup,last_checked):
         counter +=1
     
     try:
+	print type(last_checked)
         last_checked =  temp
         pickle.dump(last_checked,open('smaildata.txt','wb'))
     except:
