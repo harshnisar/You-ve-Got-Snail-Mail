@@ -109,7 +109,8 @@ for l in list:
 #We need to call the script GAS from here
     print l.name,l.date,l.room
     
-    url = 'https://script.google.com/macros/s/AKfycbzhtXyQqUA_w9kWdtxhN7H5Op4_KKF-Fiomwtj-oiAk3_NCBi7D/exec?room=%s&name=%s' %(l.room,l.name)
+    ## google apps url. Removed now. Won't work now.
+    url = '////'
     print url
     page= urllib2.urlopen(url)
 
